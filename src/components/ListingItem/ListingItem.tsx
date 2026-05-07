@@ -10,12 +10,14 @@ type ListingItemProps = {
 
 const ListingItem = ({ item }: ListingItemProps) => {
   return (
-    <div className="item">
-      <ListingItemImage href={item.url} src={item.MainImage?.url_570xN} alt={item.title} />
-      <div className="item-details">
+    <div className="product-card">
+      <ListingItemImage src={item.MainImage?.url_570xN} alt={item.title} />
+      <div className="product-info">
         <ListingItemTitle title={item.title} />
-        <ListingItemPrice price={item.price} currencyCode={item.currencyCode} />
-        <ListingItemQuantity quantity={item.quantity} />
+        <div className="price-container">
+          <ListingItemPrice price={item.price} currencyCode={item.currencyCode} />
+          <ListingItemQuantity quantity={item.quantity} />
+        </div>
       </div>
     </div>
   );

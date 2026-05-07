@@ -1,5 +1,4 @@
 import './App.css';
-import './css/main.css';
 import type {ItemType} from './types/listing-item-type';
 import Listing from './components/Listing';
 import data from './data/etsy.json';

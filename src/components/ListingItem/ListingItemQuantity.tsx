@@ -7,11 +7,11 @@ const ListingItemQuantity = ({ quantity }: ListingItemQuantityProps) => {
     quantity === undefined || quantity === null
       ? ''
       : quantity <= 10
-        ? 'level-low'
+        ? 'stock-low'
         : quantity <= 20
-          ? 'level-medium'
-          : 'level-high';
-  return <p className={`item-quantity ${className}`}>{quantity} left</p>;
+          ? 'stock-medium'
+          : 'stock-high';
+  return <span className={`product-quantity ${className}`}>{quantity} left</span>;
 };
 
 export default ListingItemQuantity;

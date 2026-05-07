@@ -4,9 +4,9 @@ type ListingItemTitleProps = {
 
 const ListingItemTitle = ({ title }: ListingItemTitleProps) => {
   return (
-    <p className="item-title">
+    <h3 className="product-title">
       {title && (title.length <= 50 ? title : title?.slice(0, 50) + '...')}
-    </p>
+    </h3>
   );
 };
 

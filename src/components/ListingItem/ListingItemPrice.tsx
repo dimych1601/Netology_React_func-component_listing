@@ -15,7 +15,7 @@ const ListingItemPrice = ({ price, currencyCode }: ListingItempPriceProps) => {
     ? `${currency}${price}`
     : `${price} ${currencyCode}`;
 
-  return <p className="item-price">{priceWithCurrency}</p>;
+  return <div className="product-price">{priceWithCurrency}</div>;
 };
 
 export default ListingItemPrice;

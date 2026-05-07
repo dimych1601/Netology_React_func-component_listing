@@ -7,7 +7,7 @@ type ListingProps = {
 
 const Listing = ({ items }: ListingProps) => {
   return (
-    <div className="item-list">
+    <div className="product-grid">
       {items.map((item) => (
         <ListingItem item={item} key={item.listing_id} />
       ))}
